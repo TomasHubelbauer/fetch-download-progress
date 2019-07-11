@@ -11,7 +11,7 @@ async function demo(url) {
   const total = Number(response.headers.get('content-length'));
   let loaded = 0;
 
-  // Note that this does not work but looks much more elegant
+  // Note that this does not work but looks much more elegant - my SO Q: https://stackoverflow.com/q/56991610/2715716
   // https://stackoverflow.com/a/47759960/2715716
   // for await (const { length } of response.body.getReader()) {
   //   loaded += length;
